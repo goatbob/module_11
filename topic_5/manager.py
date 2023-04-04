@@ -1,13 +1,13 @@
-from overriding_class import Person
-from overriding_class import Employee
+from topic_5.person import Person
+from topic_5.employee import Employee
 
 
 class Manager(Person, Employee):
     """Manger derived class from Person and Employee base classes"""
-    def __init__(self, last, first, start, sal, dept, rept=[]):
+    def __init__(self, last, first, start, sal, dept, reports=[]):
         super().__init__(last, first, start, sal)
         self._department = dept
-        self._direct_reports = rept
+        self._direct_reports = reports
 
     def display(self):
         return str(f"{self.last_name}, {self.first_name}"

@@ -1,6 +1,6 @@
 
-class SalariedEmployee():
-    """SalariedEmployee derived class from Employee base class"""
+class Employee():
+    """Employee class"""
     def __init__(self, start, sal):
         self.start_date = start
         self.salary = sal
