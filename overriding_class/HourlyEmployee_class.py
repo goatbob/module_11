@@ -6,7 +6,7 @@ last date modified: 03 april 2023
 HourlyEmployee derived class.
 """
 
-from overriding_class import Employee
+from overriding_class.Employee_class import Employee
 
 
 class HourlyEmployee(Employee):
@@ -27,7 +27,7 @@ class HourlyEmployee(Employee):
 
     def display(self):
         return str(f"Employee: {self.last_name}, {self.first_name}\n"
-                   f"Start date: {self._start_date}; Wage: ${self._hourly_pay:.2f}/hr")
+                   f"Start date: {self._start_date}; Wage: ${self._hourly_pay:.2f}/hr\n")
 
 
 if __name__ == "__main__":

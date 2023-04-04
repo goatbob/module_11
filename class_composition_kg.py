@@ -63,4 +63,11 @@ if __name__ == "__main__":
     me_stu.change_major("Being awesome!")
     me_stu.update_gpa(3.0)
     print(me_stu.display())
-    del me, me_stu
+    del me
+    del me_stu
+
+    me = Person("Godwin", "Kyle", "123 Awesome Street \n CoBo, IA 51503")
+    me_stu = Student(me, "Computer Sci", "02 April 2023", 4)
+    print(me_stu.display())
+    del me
+    del me_stu

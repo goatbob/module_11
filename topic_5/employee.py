@@ -9,7 +9,7 @@ class Employee():
         return f"Start date: {self.start_date}; Salary: {self.salary}"
 
     def __repr__(self):
-        return f"SalariedEmployee({self.start_date}, {self.salary})"
+        return f"Employee({self.start_date}, {self.salary})"
 
     def give_raise(self, new_sal):
         self.salary = new_sal

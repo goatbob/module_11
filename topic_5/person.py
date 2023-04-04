@@ -11,10 +11,10 @@ class Person:
         self.phone_number = phone
 
     def __str__(self):
-        return f"{self.last_name}, {self.first_name} \n {self.address}"
+        return f"{self.last_name}, {self.first_name}"
 
     def __repr__(self):
-        return f"{self.last_name}, {self.first_name} \n {self.address}"
+        return f"{self.last_name}, {self.first_name}"
 
     def display(self):
         return f"{self.last_name}, {self.first_name}"

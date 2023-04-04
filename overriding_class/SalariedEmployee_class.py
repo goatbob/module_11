@@ -6,7 +6,7 @@ last date modified: 03 april 2023
 SalariedEmployee derived class.
 """
 
-from overriding_class import Employee
+from overriding_class.Employee_class import Employee
 
 
 class SalariedEmployee(Employee):
@@ -27,7 +27,7 @@ class SalariedEmployee(Employee):
 
     def display(self):
         return str(f"Employee: {self.last_name}, {self.first_name}\n"
-                   f"Start date: {self.start_date}; Salary: ${self.salary}")
+                   f"Start date: {self.start_date}; Salary: ${self.salary}\n")
 
 
 if __name__ == "__main__":

@@ -14,30 +14,30 @@ class Person:
         name_characters = set("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'-")
         if not (name_characters.issuperset(lname) and name_characters.issuperset(fname)):
             raise ValueError
-        self._last_name = lname
-        self._first_name = fname
-        self._address = addy
+        self.last_name = lname
+        self.first_name = fname
+        self.address = addy
 
     def __str__(self):
-        return f"{self._last_name}, {self._first_name} \n {self._address}"
+        return f"{self.last_name}, {self.first_name} \n {self.address}"
 
     def __repr__(self):
-        return f"{self._last_name}, {self._first_name} \n {self._address}"
+        return f"{self.last_name}, {self.first_name} \n {self.address}"
 
     def display(self):
-        return f"{self._last_name}, {self._first_name}"
+        return f"{self.last_name}, {self.first_name}"
 
 
 class Student(Person):
     """Student derived class from Person base class"""
     def __init__(self, stu_id, l_name, f_name, maj="Computer Science", grade=0.0):
         super().__init__(l_name, f_name)
-        self._student_id = stu_id
-        self._major = maj
-        self._gpa = grade
+        self.student_id = stu_id
+        self.major = maj
+        self.gpa = grade
 
     def display(self):
-        return f"{self._last_name}, {self._first_name}:({self._student_id}) {self._major} gpa: {self._gpa}"
+        return f"{self.last_name}, {self.first_name}:({self.student_id}) {self.major} gpa: {self.gpa}"
 
 
 if __name__ == "__main__":
